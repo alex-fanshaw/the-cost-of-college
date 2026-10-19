@@ -6,6 +6,9 @@ The student guide explains what to build. Run check.py to test your work.
 """
 
 # ---- CONSTANTS: do not change ----
+from secrets import choice
+
+
 SEMESTERS_PER_YEAR = 2
 MONTHS_PER_YEAR = 9
 CLASS_DAYS_PER_SEMESTER = 75
@@ -46,15 +49,34 @@ def main():
     # Ask for the total cost for one year here.
     # Then ask for the credits this semester.
 
+    cost = float(input("Enter the total cost for one year: "))
+
     while True:
         # Show your menu here.
 
-        choice = input("Choose an option: ")
+        print("1. Cost per semester \n2. cost per month")
+        print("3. Cost per day")
+        print("4. Cost per credit")
+        print("5. Cost per class")
 
+        # Add a branch for each menu option here.
+
+        choice = input("Choose an option: ")
+        if choice == "1":
+            print(f"Cost per semester is ${cost_per_semester(cost):.2f}")
+        if choice == "2":
+            print(f"Cost for a month is ${cost_per_month(cost) : .2f}")
+        if choice == "3":
+            print(f"Cost per day is ${cost_per_day : .2f}")
+        if choice == "4":
+            credits = input("How many credits are you taking?")
+            print(f"Cost per credit at {credits} credits is ${cost_per_credit(cost,credits)}")
+        if choice == "5":
+            credits = input("How many credits are you taking?")
+            print(f"the cost of a 3 credit cs1430 class is ${cost_per_class(cost,credits)}")
         if choice == "Q":
             break
 
-        # Add a branch for each menu option here.
 
 
 # ---- LAUNCH: do not change ----
