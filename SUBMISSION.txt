@@ -2,13 +2,13 @@ Status : INCOMPLETE - at least one check did not pass
 Points : 38 / 40  (from check.py; counts only when the Git and GitHub checks pass)
 
 CS 1430 Assignment 2: The Cost of College
-GitHub user : alex-fanshaw
-Repository  : https://github.com/alex-fanshaw/the-cost-of-college
-Commit      : 59ffcaa5aebb99fbc08b06cb1da1ca37c2fd6295
-Message     : finished?
-Author      : Alex Fanshaw <fanshawa@uwplatt.edu>
-Committed   : 2026-10-20T11:20:18-05:00
-Checked     : 2026-10-20 11:21:07 Central Daylight Time
+GitHub user : unknown
+Repository  : unknown
+Commit      : unknown
+Message     : 
+Author      : 
+Committed   : 
+Checked     : 2026-10-20 11:29:02 Central Daylight Time
 Python      : 3.14.7
 
 ================================================================
@@ -42,9 +42,9 @@ CHECK RESULTS
 [PASS] Git is installed
 [PASS] This folder is a Git repository
 [PASS] You have committed your own work
-[PASS] Your latest changes are committed
-[PASS] Your repo is connected to GitHub
-[PASS] Your commit is pushed to GitHub
+[FAIL] Your latest changes are committed
+   > main.py has changes that are not committed yet.
+   > Save, then Commit in Source Control, so GitHub has what check.py tested.
 
 POINTS FROM check.py: 38 / 40
 
@@ -89,7 +89,7 @@ Choose an option: Cost per day is $ 97.34
 5. Cost per class
 6. cost in work-hours
 enter 1-6 or Q to quit
-Choose an option: How many credits are you taking?Cost per credit at 5 credits is $1460.1
+Choose an option: How many credits are you taking?Cost per credit at 5 credits is $1460.10
 1. Cost per semester 
 2. cost per month
 3. Cost per day
