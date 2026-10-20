@@ -1,0 +1,83 @@
+Status : INCOMPLETE - at least one check did not pass
+Points : 24 / 40  (from check.py; counts only when the Git and GitHub checks pass)
+
+CS 1430 Assignment 2: The Cost of College
+GitHub user : unknown
+Repository  : unknown
+Commit      : unknown
+Message     : 
+Author      : 
+Committed   : 
+Checked     : 2026-10-20 11:05:31 Central Daylight Time
+Python      : 3.14.7
+
+================================================================
+CHECK RESULTS
+================================================================
+
+--- Toolchain ---
+[PASS] Python 3.14.7 is installed
+[PASS] main.py is in this folder
+[PASS] main.py runs without an error
+[PASS] The constants are unchanged
+[PASS] The launch lines are in place
+
+--- Your five functions (6 points each) ---
+[PASS] cost_per_semester gives back the right values  (6/6 pts)
+[PASS] cost_per_month gives back the right values  (6/6 pts)
+[PASS] cost_per_day gives back the right values  (6/6 pts)
+[PASS] cost_per_credit gives back the right values  (6/6 pts)
+[FAIL] cost_per_class gives back the right values  (0/6 pts)
+   > Test 1 of 3 (Example A): for annual_cost = 14601, credits = 15, expected 32.45 but got 38.936
+   > Re-read what this result means in section 7 of the guide, and use the constants.
+
+--- Your program (10 points) ---
+[FAIL] The menu runs from start to Q without an error  (0/5 pts)
+   > Test 1 of 3 (Example A): with cost 14601 and 15 credits typed in:
+   > Python said: TypeError: unsupported format string passed to function.__format__
+[SKIP] Options 1 to 5 print all five amounts  (0/5 pts)
+
+--- Git and GitHub (required for your points to count) ---
+[PASS] Git is installed
+[PASS] This folder is a Git repository
+[PASS] You have committed your own work
+[FAIL] Your latest changes are committed
+   > main.py has changes that are not committed yet.
+   > Save, then Commit in Source Control, so GitHub has what check.py tested.
+
+POINTS FROM check.py: 24 / 40
+
+================================================================
+PROGRAM OUTPUT  (typed: 14601, 15, 1, 2, 3, 4, 5, Q)
+================================================================
+Enter the total cost for one year: 1. Cost per semester 
+2. cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+6. cost in work-hours
+enter 1-6 or Q to quit
+Choose an option: 1. Cost per semester 
+2. cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+6. cost in work-hours
+enter 1-6 or Q to quit
+Choose an option: Cost per semester is $7300.50
+1. Cost per semester 
+2. cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+6. cost in work-hours
+enter 1-6 or Q to quit
+Choose an option: Cost for a month is $ 1622.33
+1. Cost per semester 
+2. cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+6. cost in work-hours
+enter 1-6 or Q to quit
+Choose an option:

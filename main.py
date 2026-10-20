@@ -20,28 +20,32 @@ CS1430_MEETINGS_PER_SEMESTER = 45
 
 def cost_per_semester(annual_cost):
     """Give back what one semester costs."""
-    return 0
+    return annual_cost / SEMESTERS_PER_YEAR
 
 
 def cost_per_month(annual_cost):
     """Give back what one month of the academic year costs."""
-    return 0
+    return annual_cost / MONTHS_PER_YEAR
 
 
 def cost_per_day(annual_cost):
     """Give back what one class day costs."""
-    return 0
+    return annual_cost / CLASS_DAYS_PER_SEMESTER / SEMESTERS_PER_YEAR
 
 
 def cost_per_credit(annual_cost, credits):
     """Give back what one credit costs. credits is the number taken this semester."""
-    return 0
+    return annual_cost / credits / SEMESTERS_PER_YEAR
 
 
 def cost_per_class(annual_cost, credits):
     """Give back what one 50-minute CS 1430 class meeting costs."""
-    return 0
+    return annual_cost / CLASS_DAYS_PER_SEMESTER * (3 /credits) / SEMESTERS_PER_YEAR
 
+
+def hour(annual_cost, wage):
+    """says the hours I'd have to work to pay"""
+    return annual_cost // wage
 
 # ---- PROGRAM ----
 
@@ -58,6 +62,8 @@ def main():
         print("3. Cost per day")
         print("4. Cost per credit")
         print("5. Cost per class")
+        print("6. cost in work-hours")
+        print("enter 1-6 or Q to quit")
 
         # Add a branch for each menu option here.
 
@@ -74,6 +80,9 @@ def main():
         if choice == "5":
             credits = input("How many credits are you taking?")
             print(f"the cost of a 3 credit cs1430 class is ${cost_per_class(cost,credits)}")
+        if choice == "6":
+            wage = float(input("how much do you make an hour?"))
+            print(f"at a rate of ${wage:.2f} it would take {hour(cost,wage)} hours to pay for college")
         if choice == "Q":
             break
 
