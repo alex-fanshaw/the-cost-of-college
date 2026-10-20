@@ -1,14 +1,14 @@
 Status : INCOMPLETE - at least one check did not pass
-Points : 30 / 40  (from check.py; counts only when the Git and GitHub checks pass)
+Points : 38 / 40  (from check.py; counts only when the Git and GitHub checks pass)
 
 CS 1430 Assignment 2: The Cost of College
 GitHub user : alex-fanshaw
 Repository  : https://github.com/alex-fanshaw/the-cost-of-college
-Commit      : ea93fc1566a4f2b5a1eef9799ff44508970b0d38
-Message     : 12
+Commit      : 59ffcaa5aebb99fbc08b06cb1da1ca37c2fd6295
+Message     : finished?
 Author      : Alex Fanshaw <fanshawa@uwplatt.edu>
-Committed   : 2026-10-20T11:15:15-05:00
-Checked     : 2026-10-20 11:15:50 Central Daylight Time
+Committed   : 2026-10-20T11:20:18-05:00
+Checked     : 2026-10-20 11:21:07 Central Daylight Time
 Python      : 3.14.7
 
 ================================================================
@@ -30,11 +30,13 @@ CHECK RESULTS
 [PASS] cost_per_class gives back the right values  (6/6 pts)
 
 --- Your program (10 points) ---
-[FAIL] The menu runs from start to Q without an error  (0/5 pts)
-   > Test 1 of 3 (Example A): with cost 14601 and 15 credits typed in:
-   > Python said: TypeError: unsupported operand type(s) for /: 'float' and 'str'
-   > input() always gives back text. Convert it with float() or int() before doing math.
-[SKIP] Options 1 to 5 print all five amounts  (0/5 pts)
+[PASS] The menu runs from start to Q without an error  (5/5 pts)
+[FAIL] Options 1 to 5 print all five amounts  (3/5 pts)
+   > Test 1 of 3 (Example A): with cost 14601 and 15 credits, these amounts were not found in output:
+   >     486.70  (from cost_per_credit)
+   >     32.45  (from cost_per_class)
+   > Each amount must be printed with exactly two decimals, like 97.34.
+   > check.py types: cost, credits, 1, 2, 3, 4, 5, Q.
 
 --- Git and GitHub (required for your points to count) ---
 [PASS] Git is installed
@@ -44,7 +46,7 @@ CHECK RESULTS
 [PASS] Your repo is connected to GitHub
 [PASS] Your commit is pushed to GitHub
 
-POINTS FROM check.py: 30 / 40
+POINTS FROM check.py: 38 / 40
 
 ================================================================
 PROGRAM OUTPUT  (typed: 14601, 15, 1, 2, 3, 4, 5, Q)
@@ -87,4 +89,12 @@ Choose an option: Cost per day is $ 97.34
 5. Cost per class
 6. cost in work-hours
 enter 1-6 or Q to quit
-Choose an option: How many credits are you taking?
+Choose an option: How many credits are you taking?Cost per credit at 5 credits is $1460.1
+1. Cost per semester 
+2. cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+6. cost in work-hours
+enter 1-6 or Q to quit
+Choose an option:
