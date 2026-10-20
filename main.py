@@ -40,7 +40,7 @@ def cost_per_credit(annual_cost, credits):
 
 def cost_per_class(annual_cost, credits):
     """Give back what one 50-minute CS 1430 class meeting costs."""
-    return annual_cost / CLASS_DAYS_PER_SEMESTER * (3 /credits) / SEMESTERS_PER_YEAR
+    return annual_cost / 45 * (CS1430_CREDITS / credits) / SEMESTERS_PER_YEAR
 
 
 def hour(annual_cost, wage):
@@ -73,7 +73,7 @@ def main():
         if choice == "2":
             print(f"Cost for a month is ${cost_per_month(cost) : .2f}")
         if choice == "3":
-            print(f"Cost per day is ${cost_per_day : .2f}")
+            print(f"Cost per day is ${cost_per_day(cost) : .2f}")
         if choice == "4":
             credits = input("How many credits are you taking?")
             print(f"Cost per credit at {credits} credits is ${cost_per_credit(cost,credits)}")
