@@ -35,7 +35,7 @@ def cost_per_day(annual_cost):
 
 def cost_per_credit(annual_cost, credits):
     """Give back what one credit costs. credits is the number taken this semester."""
-    return annual_cost / credits / SEMESTERS_PER_YEAR
+    return float(annual_cost) / float(credits) / SEMESTERS_PER_YEAR
 
 
 def cost_per_class(annual_cost, credits):
@@ -78,8 +78,8 @@ def main():
             credits = input("How many credits are you taking?")
             print(f"Cost per credit at {credits} credits is ${cost_per_credit(cost,credits)}")
         if choice == "5":
-            credits = input("How many credits are you taking?")
-            print(f"the cost of a 3 credit cs1430 class is ${cost_per_class(cost,credits)}")
+            credits = float(input("How many credits are you taking?"))
+            print(f"the cost of a 3 credit cs1430 class is ${cost_per_class(cost,credits) :.2f}")
         if choice == "6":
             wage = float(input("how much do you make an hour?"))
             print(f"at a rate of ${wage:.2f} it would take {hour(cost,wage)} hours to pay for college")

@@ -2,13 +2,13 @@ Status : INCOMPLETE - at least one check did not pass
 Points : 30 / 40  (from check.py; counts only when the Git and GitHub checks pass)
 
 CS 1430 Assignment 2: The Cost of College
-GitHub user : unknown
-Repository  : unknown
-Commit      : unknown
-Message     : 
-Author      : 
-Committed   : 
-Checked     : 2026-10-20 11:13:49 Central Daylight Time
+GitHub user : alex-fanshaw
+Repository  : https://github.com/alex-fanshaw/the-cost-of-college
+Commit      : ea93fc1566a4f2b5a1eef9799ff44508970b0d38
+Message     : 12
+Author      : Alex Fanshaw <fanshawa@uwplatt.edu>
+Committed   : 2026-10-20T11:15:15-05:00
+Checked     : 2026-10-20 11:15:50 Central Daylight Time
 Python      : 3.14.7
 
 ================================================================
@@ -32,16 +32,17 @@ CHECK RESULTS
 --- Your program (10 points) ---
 [FAIL] The menu runs from start to Q without an error  (0/5 pts)
    > Test 1 of 3 (Example A): with cost 14601 and 15 credits typed in:
-   > Python said: TypeError: unsupported format string passed to function.__format__
+   > Python said: TypeError: unsupported operand type(s) for /: 'float' and 'str'
+   > input() always gives back text. Convert it with float() or int() before doing math.
 [SKIP] Options 1 to 5 print all five amounts  (0/5 pts)
 
 --- Git and GitHub (required for your points to count) ---
 [PASS] Git is installed
 [PASS] This folder is a Git repository
 [PASS] You have committed your own work
-[FAIL] Your latest changes are committed
-   > main.py has changes that are not committed yet.
-   > Save, then Commit in Source Control, so GitHub has what check.py tested.
+[PASS] Your latest changes are committed
+[PASS] Your repo is connected to GitHub
+[PASS] Your commit is pushed to GitHub
 
 POINTS FROM check.py: 30 / 40
 
@@ -78,4 +79,12 @@ Choose an option: Cost for a month is $ 1622.33
 5. Cost per class
 6. cost in work-hours
 enter 1-6 or Q to quit
-Choose an option:
+Choose an option: Cost per day is $ 97.34
+1. Cost per semester 
+2. cost per month
+3. Cost per day
+4. Cost per credit
+5. Cost per class
+6. cost in work-hours
+enter 1-6 or Q to quit
+Choose an option: How many credits are you taking?
