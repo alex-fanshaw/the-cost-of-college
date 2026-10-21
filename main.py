@@ -76,13 +76,13 @@ def main():
             print(f"Cost per day is ${cost_per_day(cost) : .2f}")
         if choice == "4":
             credits = input("How many credits are you taking?")
-            print(f"Cost per credit at {credits} credits is ${cost_per_credit(cost,credits):.2f}")
+            print(f"Cost per credit at  credits is ${cost_per_credit(cost,credits):.2f}")
         if choice == "5":
             credits = float(input("How many credits are you taking?"))
             print(f"the cost of a 3 credit cs1430 class is ${cost_per_class(cost,credits) :.2f}")
         if choice == "6":
             wage = float(input("how much do you make an hour?"))
-            print(f"at a rate of ${wage:.2f} it would take {hour(cost,wage)} hours to pay for college")
+            print(f"at a rate of $ it would take {hour(cost,wage)} hours to pay for college")
         if choice == "Q":
             break
 
