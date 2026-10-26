@@ -54,7 +54,7 @@ def main():
     # Then ask for the credits this semester.
 
     cost = float(input("Enter the total cost for one year: "))
-    credits = input("How many credits are you taking?")
+    credits = int(input("How many credits are you taking?"))
 
 
     while True:
