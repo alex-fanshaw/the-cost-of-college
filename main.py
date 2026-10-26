@@ -54,6 +54,8 @@ def main():
     # Then ask for the credits this semester.
 
     cost = float(input("Enter the total cost for one year: "))
+    credits = input("How many credits are you taking?")
+
 
     while True:
         # Show your menu here.
@@ -75,10 +77,10 @@ def main():
         if choice == "3":
             print(f"Cost per day is ${cost_per_day(cost) : .2f}")
         if choice == "4":
-            credits = input("How many credits are you taking?")
+            # credits = input("How many credits are you taking?")
             print(f"Cost per credit at  credits is ${cost_per_credit(cost,credits):.2f}")
         if choice == "5":
-            credits = float(input("How many credits are you taking?"))
+            # credits = float(input("How many credits are you taking?"))
             print(f"the cost of a 3 credit cs1430 class is ${cost_per_class(cost,credits) :.2f}")
         if choice == "6":
             wage = float(input("how much do you make an hour?"))
